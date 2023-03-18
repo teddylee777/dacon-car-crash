@@ -75,20 +75,7 @@ class Resnt18Rnn(nn.Module):
         rnn_num_layers = 2
         num_features = 128
         
-        baseModel = models.resnet50(pretrained=True)
-        # baseModel.fc = nn.Sequential(
-        #     nn.Linear(2048, 512),
-        #     nn.ReLU(),
-        #     nn.BatchNorm1d(512),
-        #     nn.Linear(512, num_features),
-        # )
-        
-        # for param in baseModel.parameters():
-        #     param.requires_grad = False
-            
-        # for param in baseModel.fc.parameters():
-        #     param.requires_grad = True
-            
+        baseModel = models.resnet50(pretrained=True)            
         num_features = baseModel.fc.in_features
         
         baseModel.fc = Identity()

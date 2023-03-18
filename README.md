@@ -39,3 +39,9 @@ python main.py --epoch 20 --bs 4 --lr 5e-5 --height 112 --width 112 --name rnn -
 - rs: 랜덤 시드 변경 여부
 - cuda: CUDA 디바이스 (0, 1)
 - target: crash, ego, weather, timing 중 선택
+
+
+
+## Weights
+
+링크: https://drive.google.com/drive/folders/1vT3Dkp_uKiKBK-6i3fbWiXeCLZwnBa7I?usp=share_link
